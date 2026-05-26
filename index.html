@@ -42,8 +42,8 @@ display:flex;flex-direction:column;align-items:center;justify-content:center;tex
 
 /* ===== WhatsApp Button ===== */
 .wa-button-wrap{display:flex;align-items:center;gap:15px;margin-top:30px;}
-.wa-button-wrap button{background:#111;color:white;border:1px solid #fff;padding:14px 35px;font-weight:bold;text-transform:uppercase;font-size:13px;}
-.wa-button-wrap button:hover{background:#fff;color:#111;}
+.wa-button-wrap button{background:#FFD700;color:#111;border:none;padding:14px 35px;font-weight:bold;text-transform:uppercase;font-size:13px;}
+.wa-button-wrap button:hover{background:#FFC107;color:#111;}
 #waBadge{background:#C5A880;color:#fff;padding:4px 12px;font-size:12px;font-weight:bold;letter-spacing: 1px;text-transform: uppercase;}
 
 /* ===== Product Section ===== */
@@ -54,8 +54,8 @@ display:flex;flex-direction:column;align-items:center;justify-content:center;tex
 .product-overlay{position:absolute;bottom:0;left:0;width:100%;padding:30px 20px;box-sizing: border-box;background:linear-gradient(to top,rgba(0,0,0,0.85),transparent);color:white;}
 .product-overlay h3{font-size:18px;font-weight:400;color: #fff;margin-bottom: 5px;}
 .product-overlay p{margin:0 0 15px;font-size:13px;color:#ccc;letter-spacing: 0.5px;}
-.product-overlay button{background:#fff;color:#111;border:none;padding:10px 22px;font-size:12px;font-weight:bold;text-transform: uppercase;}
-.product-overlay button:hover{background:#C5A880;color:#fff;}
+.product-overlay button{background:#FFD700;color:#111;border:none;padding:10px 22px;font-size:12px;font-weight:bold;text-transform:uppercase;}
+.product-overlay button:hover{background:#FFC107;color:#111;}
 .product-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(0,0,0,0.08);}
 
 /* ===== Blog Section ===== */
@@ -65,8 +65,8 @@ display:flex;flex-direction:column;align-items:center;justify-content:center;tex
 .blog-main-content{position:absolute;bottom:0;left:0;width:100%;padding:40px 30px;box-sizing: border-box;background:linear-gradient(to top,rgba(0,0,0,0.85),transparent);color:white;}
 .blog-main-content h3{font-size:24px;color: #fff;margin-bottom: 10px;}
 .blog-main-content p{color: #ccc; margin-bottom: 15px;}
-.blog-main-content button{background:#C5A880;color:white;border:none;padding:10px 24px;font-size:12px;text-transform: uppercase;cursor:pointer;}
-.blog-main-content button:hover{background:#fff;color:#111;}
+.blog-main-content button{background:#FFD700;color:#111;border:none;padding:10px 24px;font-size:12px;text-transform:uppercase;cursor:pointer;}
+.blog-main-content button:hover{background:#FFC107;color:#111;}
 .blog-side{display:flex;flex-direction:column;gap:20px;}
 .blog-small{display:flex;gap:15px;background:#fff;padding:15px;border: 1px solid #eee;align-items: center;}
 .blog-small img{width:110px;height:110px;object-fit:cover;}
@@ -86,12 +86,12 @@ display:flex;flex-direction:column;align-items:center;justify-content:center;tex
 .testimonial-avatar{width:55px;height:55px;border-radius:50%;color:#fff;font-weight:300;font-size:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .testimonial-card p{margin:0;font-size:14px;color:#444;font-style: italic;}
 .testimonials-controls{text-align:right;margin-top:15px;}
-.testimonials-controls button{background:#111;color:#fff;border:none;padding:8px 16px;margin-left:5px;font-size: 14px;cursor:pointer;}
-.testimonials-controls button:hover{background:#C5A880;}
+.testimonials-controls button{background:#FFD700;color:#111;border:none;padding:8px 16px;margin-left:5px;font-size:14px;cursor:pointer;}
+.testimonials-controls button:hover{background:#FFC107;}
 
 /* ===== Floating WhatsApp ===== */
-#floatWA{position:fixed;bottom:25px;right:25px;width:55px;height:55px;background:#111;border:1px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:999;box-shadow: 0 4px 15px rgba(0,0,0,0.2);animation:float 2s infinite;}
-#floatWA svg{width:26px;height:26px;fill:#fff;}
+#floatWA{position:fixed;bottom:25px;right:25px;width:55px;height:55px;background:#FFD700;border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:999;box-shadow:0 4px 15px rgba(0,0,0,0.2);animation:float 2s infinite;}
+#floatWA svg{width:26px;height:26px;fill:#111;}
 @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
 
 /* ===== Responsive ===== */
@@ -284,23 +284,3 @@ document.getElementById('nextBtn').onclick=()=>{index=(index+1)%cards.length;sho
 
 </body>
 </html>
-
-<style>
-/* Yellow button override */
-button{
-    background:#FFD700 !important;
-    color:#111 !important;
-    border:none !important;
-}
-button:hover{
-    background:#FFC107 !important;
-    color:#111 !important;
-}
-#floatWA{
-    background:#FFD700 !important;
-    border:none !important;
-}
-#floatWA svg{
-    fill:#111 !important;
-}
-</style>
