@@ -211,8 +211,8 @@ display:flex;flex-direction:column;align-items:center;justify-content:center;tex
 <script>
 // ===== 固定客服绑定逻辑 =====
 const WA_POOL = [
-  {name:"lewis", link:"https://wa.me/8618695685735", event:"WA_1"},
-  {name:"Diana", link:"https://wa.me/8613015967181", event:"WA_2"}
+  {name:"lewis", link:"https://wa.me/8613015967181", event:"WA_1"},
+  {name:"Diana", link:"https://wa.me/8618695685735", event:"WA_2"}
 ];
 function getCookie(name){
   const m=document.cookie.match(new RegExp('(^| )'+name+'=([^;]+)'));
@@ -284,3 +284,23 @@ document.getElementById('nextBtn').onclick=()=>{index=(index+1)%cards.length;sho
 
 </body>
 </html>
+
+<style>
+/* Yellow button override */
+button{
+    background:#FFD700 !important;
+    color:#111 !important;
+    border:none !important;
+}
+button:hover{
+    background:#FFC107 !important;
+    color:#111 !important;
+}
+#floatWA{
+    background:#FFD700 !important;
+    border:none !important;
+}
+#floatWA svg{
+    fill:#111 !important;
+}
+</style>
